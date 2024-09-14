@@ -29,7 +29,7 @@ let defaultConfig : ConfigType =
       }
 
 let generateConfig =
-      λ(config : ConfigType)
+      \(config : ConfigType)
     → ''
       max_connections = ${Natural/show config.max_connections}
       shared_buffers = ${config.shared_buffers}
